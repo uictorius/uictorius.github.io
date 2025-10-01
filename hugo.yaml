@@ -1,7 +1,3 @@
-module:
-  imports:
-    - path: github.com/uictorius/hugo-PaperMod
-    
 baseURL: "https://uictorius.github.io/"
 languageCode: "en-us"
 title: "uictorius"
