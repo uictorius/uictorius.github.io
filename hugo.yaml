@@ -1,0 +1,127 @@
+baseURL: "https://uictorius.github.io/"
+languageCode: "en-us"
+title: "uictorius"
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+mainsections: ["posts", "papermod"]
+
+caches:
+  images:
+    dir: :cacheDir/images
+
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+pagination:
+  disableAliases: false
+  pagerSize: 5
+
+languages:
+  en:
+    languageName: "English"
+    weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: "uictorius – Random Notes & Experiments"
+  description: "Just some casual notes and experiments on tech, software, and firmware that I find interesting."
+  keywords: [
+    "tech",
+    "firmware",
+    "Android",
+    "Allwinner",
+    "Rockchip",
+    "software experiments",
+    "programming",
+    "reverse engineering",
+    "hardware hacking",
+    "Linux",
+    "embedded systems",
+    "electronics",
+    "software reverse engineering",
+    "system internals"
+  ]
+
+  canonicalURL: "https://uictorius.github.io/"
+  author: "uictorius"
+  ogImage: "/images/og-default.png"
+  ogType: "website"
+
+  defaultTheme: auto
+  ShowShareButtons: false
+  ShowReadingTime: false
+  ShowToc: true
+  tocopen: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowPostNavLinks: true
+  displayFullLangName: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+
+  assets:
+    disableHLJS: true
+  HighlightStyle: "atom-one-dark"
+
+  homeInfoParams:
+    Title: "Hey there! 👋"
+    Content: "Just some notes and experiments on stuff I find interesting. Stick around!"
+
+  socialIcons:
+    - name: github
+      title: "View Source on Github"
+      url: "https://github.com/uictorius/uictorius.github.io"
+
+  editPost:
+    URL: "https://github.com/uictorius/uictorius.github.io/tree/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    noClasses: false
+    style: base16-snazzy
+
+services:
+  instagram:
+    disableInlineCSS: true
+  x:
+    disableInlineCSS: true
