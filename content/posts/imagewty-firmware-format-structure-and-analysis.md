@@ -1,6 +1,6 @@
 ---
 date: '2025-09-23T09:26:39-03:00'
-draft: true
+draft: false
 title: 'IMAGEWTY Firmware Format: Structure and Analysis'
 description: 'Technical exploration of the IMAGEWTY firmware format, its structure, and underlying components.'
 tags: ["Firmware", "Allwinner", "Analysis"]
